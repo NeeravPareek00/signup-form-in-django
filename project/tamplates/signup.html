@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title style="background-color: rgb(223, 135, 149);font-family: Verdana, Geneva, Tahoma, sans-serif;font-weight: bold;">sign up</title>
+<style>
+  input{font-family: 'Times New Roman', Times, serif;font-size: 15px;font-weight: bold;}
+  p{font-family: 'Times New Roman', Times, serif;font-size: 15px;font-weight: bold;margin: 5px;align-items: center;}
+  #fo{padding: 10px; margin: 20px;
+     
+    background-position: 100%;background-size: 100; border: 5px solid black; 
+    background-repeat: no-repeat;}
+  button{background-color: rgb(240, 185, 185);
+    font-size: 20px;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    }
+    sub{font-style: normal;
+      border-width: 1px;
+      border-color: black;
+    
+    
+    
+    }
+  
+
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+  <div id="fo">
+    <h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: bold;color: black;">sign Up Here</h2>
+  </div>
+  <div style="background-color:rgb(223, 85, 149); padding: 10px; margin: 15px; border: 3px solid ">
+    <form method="get" action="{% url 'thanks' %}">
+      <p>First name</p><input type="text" id="fname" name="first name"><br>
+      <p>Last Name</p><input type="text" id="lname" name="last name"><br>
+      <p>Email</p><input type="email" id="email" name="email">
+      <p>password</p><input type="password" id="password" name="password"><br>
+      <button class="sub" type="submit" href="{% url 'thanks' %}">submit</button>
+
+
+       
+    </form>
+  </div>
+</body>
+
+</html>
